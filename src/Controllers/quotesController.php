@@ -6,7 +6,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 
 class QuotesController {
 
-    public function test(): bool
+    public function test(Request $request, Response $response): bool
     {
        echo "Quotes Controller is working!";
        return true;
