@@ -1,8 +1,8 @@
 <?php 
 
-use Controllers\QuotesController;
+use Controllers\quotesController;
 
 return function($app) {
-    $app->get('/', [QuotesController::class, 'test']);
-    $app->get('/quotes', [QuotesController::class, 'getQuotes']);
+    $app->get('/', [quotesController::class, 'test']);
+    $app->get('/quotes', [quotesController::class, 'getQuotes']);
 };
